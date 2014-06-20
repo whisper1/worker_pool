@@ -18,8 +18,8 @@
 -behaviour(gen_server).
 
 -record(state, {wpool   :: wpool:name(),
-                clients :: queue(),
-                workers :: gb_set()}).
+                clients :: queue:queue(),
+                workers :: gb_sets:gb_set()}).
 -type state() :: #state{}.
 
 %% api
