@@ -20,6 +20,7 @@
   {registered,   []},
   {applications, [kernel,stdlib,lager]},
   {mod, {wpool, []}},
+   {modules, [wpool_pool, wpool_process, wpool_queue_manager, wpool_sup, wpool_worker, wpool, wpool_time_checker]},
   {env, []}
  ]
 }.
